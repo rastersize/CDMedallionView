@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C48C898165E35B900E26500 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C48C897165E35B900E26500 /* Cocoa.framework */; };
+		9C48C8A2165E35B900E26500 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C48C8A0165E35B900E26500 /* InfoPlist.strings */; };
+		9C48C8A6165E35B900E26500 /* CDMedallionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C48C8A5165E35B900E26500 /* CDMedallionView.m */; };
+		9C48C8B5165E3B1700E26500 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C48C897165E35B900E26500 /* Cocoa.framework */; };
+		9C48C8BB165E3B1700E26500 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C48C8B9165E3B1700E26500 /* InfoPlist.strings */; };
+		9C48C8BD165E3B1700E26500 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C48C8BC165E3B1700E26500 /* main.m */; };
+		9C48C8C1165E3B1700E26500 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9C48C8BF165E3B1700E26500 /* Credits.rtf */; };
+		9C48C8C4165E3B1700E26500 /* CDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C48C8C3165E3B1700E26500 /* CDAppDelegate.m */; };
+		9C48C8C7165E3B1700E26500 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C48C8C5165E3B1700E26500 /* MainMenu.xib */; };
+		9C48C8CD165E3B2500E26500 /* CDMedallionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C48C894165E35B900E26500 /* CDMedallionView.framework */; };
+		9C48C8CF165E3C1200E26500 /* mountain-lion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C48C8CE165E3C1200E26500 /* mountain-lion.jpg */; };
+		9C48C8D0165E3D1B00E26500 /* CDMedallionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C48C8A4165E35B900E26500 /* CDMedallionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C48C8CB165E3B1F00E26500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C48C88B165E35B900E26500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C48C893165E35B900E26500;
+			remoteInfo = CDMedallionView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C48C894165E35B900E26500 /* CDMedallionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CDMedallionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C48C897165E35B900E26500 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9C48C89A165E35B900E26500 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9C48C89B165E35B900E26500 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9C48C89C165E35B900E26500 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9C48C89F165E35B900E26500 /* CDMedallionView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDMedallionView-Info.plist"; sourceTree = "<group>"; };
+		9C48C8A1165E35B900E26500 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C48C8A3165E35B900E26500 /* CDMedallionView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDMedallionView-Prefix.pch"; sourceTree = "<group>"; };
+		9C48C8A4165E35B900E26500 /* CDMedallionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMedallionView.h; sourceTree = "<group>"; };
+		9C48C8A5165E35B900E26500 /* CDMedallionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMedallionView.m; sourceTree = "<group>"; };
+		9C48C8B4165E3B1700E26500 /* Medallion Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medallion Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C48C8B8165E3B1700E26500 /* Medallion Test App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Medallion Test App-Info.plist"; sourceTree = "<group>"; };
+		9C48C8BA165E3B1700E26500 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C48C8BC165E3B1700E26500 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C48C8BE165E3B1700E26500 /* Medallion Test App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Medallion Test App-Prefix.pch"; sourceTree = "<group>"; };
+		9C48C8C0165E3B1700E26500 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9C48C8C2165E3B1700E26500 /* CDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDAppDelegate.h; sourceTree = "<group>"; };
+		9C48C8C3165E3B1700E26500 /* CDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDAppDelegate.m; sourceTree = "<group>"; };
+		9C48C8C6165E3B1700E26500 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9C48C8CE165E3C1200E26500 /* mountain-lion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mountain-lion.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C48C890165E35B900E26500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C48C898165E35B900E26500 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C48C8B1165E3B1700E26500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C48C8CD165E3B2500E26500 /* CDMedallionView.framework in Frameworks */,
+				9C48C8B5165E3B1700E26500 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C48C88A165E35B900E26500 = {
+			isa = PBXGroup;
+			children = (
+				9C48C89D165E35B900E26500 /* CDMedallionView */,
+				9C48C8B6165E3B1700E26500 /* Medallion Test App */,
+				9C48C896165E35B900E26500 /* Frameworks */,
+				9C48C895165E35B900E26500 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C48C895165E35B900E26500 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C894165E35B900E26500 /* CDMedallionView.framework */,
+				9C48C8B4165E3B1700E26500 /* Medallion Test App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C48C896165E35B900E26500 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C897165E35B900E26500 /* Cocoa.framework */,
+				9C48C899165E35B900E26500 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C48C899165E35B900E26500 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C89A165E35B900E26500 /* AppKit.framework */,
+				9C48C89B165E35B900E26500 /* CoreData.framework */,
+				9C48C89C165E35B900E26500 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9C48C89D165E35B900E26500 /* CDMedallionView */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C8A4165E35B900E26500 /* CDMedallionView.h */,
+				9C48C8A5165E35B900E26500 /* CDMedallionView.m */,
+				9C48C89E165E35B900E26500 /* Supporting Files */,
+			);
+			path = CDMedallionView;
+			sourceTree = "<group>";
+		};
+		9C48C89E165E35B900E26500 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C89F165E35B900E26500 /* CDMedallionView-Info.plist */,
+				9C48C8A0165E35B900E26500 /* InfoPlist.strings */,
+				9C48C8A3165E35B900E26500 /* CDMedallionView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C48C8B6165E3B1700E26500 /* Medallion Test App */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C8C2165E3B1700E26500 /* CDAppDelegate.h */,
+				9C48C8C3165E3B1700E26500 /* CDAppDelegate.m */,
+				9C48C8C5165E3B1700E26500 /* MainMenu.xib */,
+				9C48C8B7165E3B1700E26500 /* Supporting Files */,
+			);
+			path = "Medallion Test App";
+			sourceTree = "<group>";
+		};
+		9C48C8B7165E3B1700E26500 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C8CE165E3C1200E26500 /* mountain-lion.jpg */,
+				9C48C8B8165E3B1700E26500 /* Medallion Test App-Info.plist */,
+				9C48C8B9165E3B1700E26500 /* InfoPlist.strings */,
+				9C48C8BC165E3B1700E26500 /* main.m */,
+				9C48C8BE165E3B1700E26500 /* Medallion Test App-Prefix.pch */,
+				9C48C8BF165E3B1700E26500 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9C48C891165E35B900E26500 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C48C8D0165E3D1B00E26500 /* CDMedallionView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9C48C893165E35B900E26500 /* CDMedallionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C48C8A9165E35B900E26500 /* Build configuration list for PBXNativeTarget "CDMedallionView" */;
+			buildPhases = (
+				9C48C88F165E35B900E26500 /* Sources */,
+				9C48C890165E35B900E26500 /* Frameworks */,
+				9C48C891165E35B900E26500 /* Headers */,
+				9C48C892165E35B900E26500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDMedallionView;
+			productName = CDMedallionView;
+			productReference = 9C48C894165E35B900E26500 /* CDMedallionView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9C48C8B3165E3B1700E26500 /* Medallion Test App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C48C8C8165E3B1700E26500 /* Build configuration list for PBXNativeTarget "Medallion Test App" */;
+			buildPhases = (
+				9C48C8B0165E3B1700E26500 /* Sources */,
+				9C48C8B1165E3B1700E26500 /* Frameworks */,
+				9C48C8B2165E3B1700E26500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C48C8CC165E3B1F00E26500 /* PBXTargetDependency */,
+			);
+			name = "Medallion Test App";
+			productName = "Medallion Test App";
+			productReference = 9C48C8B4165E3B1700E26500 /* Medallion Test App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C48C88B165E35B900E26500 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Aron Cedercrantz";
+			};
+			buildConfigurationList = 9C48C88E165E35B900E26500 /* Build configuration list for PBXProject "CDMedallionView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9C48C88A165E35B900E26500;
+			productRefGroup = 9C48C895165E35B900E26500 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C48C893165E35B900E26500 /* CDMedallionView */,
+				9C48C8B3165E3B1700E26500 /* Medallion Test App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C48C892165E35B900E26500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C48C8A2165E35B900E26500 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C48C8B2165E3B1700E26500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C48C8BB165E3B1700E26500 /* InfoPlist.strings in Resources */,
+				9C48C8C1165E3B1700E26500 /* Credits.rtf in Resources */,
+				9C48C8C7165E3B1700E26500 /* MainMenu.xib in Resources */,
+				9C48C8CF165E3C1200E26500 /* mountain-lion.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C48C88F165E35B900E26500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C48C8A6165E35B900E26500 /* CDMedallionView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C48C8B0165E3B1700E26500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C48C8BD165E3B1700E26500 /* main.m in Sources */,
+				9C48C8C4165E3B1700E26500 /* CDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C48C8CC165E3B1F00E26500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C48C893165E35B900E26500 /* CDMedallionView */;
+			targetProxy = 9C48C8CB165E3B1F00E26500 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C48C8A0165E35B900E26500 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C48C8A1165E35B900E26500 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9C48C8B9165E3B1700E26500 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C48C8BA165E3B1700E26500 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9C48C8BF165E3B1700E26500 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C48C8C0165E3B1700E26500 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9C48C8C5165E3B1700E26500 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C48C8C6165E3B1700E26500 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C48C8A7165E35B900E26500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9C48C8A8165E35B900E26500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9C48C8AA165E35B900E26500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDMedallionView/CDMedallionView-Prefix.pch";
+				INFOPLIST_FILE = "CDMedallionView/CDMedallionView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		9C48C8AB165E35B900E26500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDMedallionView/CDMedallionView-Prefix.pch";
+				INFOPLIST_FILE = "CDMedallionView/CDMedallionView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		9C48C8C9165E3B1700E26500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Medallion Test App/Medallion Test App-Prefix.pch";
+				INFOPLIST_FILE = "Medallion Test App/Medallion Test App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9C48C8CA165E3B1700E26500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Medallion Test App/Medallion Test App-Prefix.pch";
+				INFOPLIST_FILE = "Medallion Test App/Medallion Test App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C48C88E165E35B900E26500 /* Build configuration list for PBXProject "CDMedallionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C48C8A7165E35B900E26500 /* Debug */,
+				9C48C8A8165E35B900E26500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C48C8A9165E35B900E26500 /* Build configuration list for PBXNativeTarget "CDMedallionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C48C8AA165E35B900E26500 /* Debug */,
+				9C48C8AB165E35B900E26500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C48C8C8165E3B1700E26500 /* Build configuration list for PBXNativeTarget "Medallion Test App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C48C8C9165E3B1700E26500 /* Debug */,
+				9C48C8CA165E3B1700E26500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C48C88B165E35B900E26500 /* Project object */;
+}

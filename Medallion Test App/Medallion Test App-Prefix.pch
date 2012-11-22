@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Medallion Test App' target in the 'Medallion Test App' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#endif
