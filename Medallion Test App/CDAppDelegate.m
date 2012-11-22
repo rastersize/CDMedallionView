@@ -13,6 +13,20 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	self.smallMedallionView.borderWidth = 2.f;
+	self.smallMedallionView.addShine = YES;
+	
+	self.mediumMedallionView.borderWidth = 3.f;
+	self.mediumMedallionView.addShine = YES;
+	
+	self.largeMedallionView.addShine = YES;
+}
+
+- (void)toggleShine:(NSButton *)sender
+{
+	BOOL addShine = (sender.state == NSOnState);
+	self.smallMedallionView.addShine = addShine;
+	self.mediumMedallionView.addShine = addShine;
+	self.largeMedallionView.addShine = addShine;
 }
 
 @end

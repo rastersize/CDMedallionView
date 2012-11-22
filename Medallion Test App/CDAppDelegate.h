@@ -17,4 +17,6 @@
 @property (assign) IBOutlet CDMedallionView *mediumMedallionView;
 @property (assign) IBOutlet CDMedallionView *smallMedallionView;
 
+- (IBAction)toggleShine:(NSButton *)sender;
+
 @end
