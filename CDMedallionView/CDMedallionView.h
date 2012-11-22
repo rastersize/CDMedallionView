@@ -51,13 +51,6 @@
  */
 @property (strong) NSColor *borderColor;
 
-/**
- If set the border will be drawn using this gradient instead of a solid color.
- 
- The default is `nil`.
- */
-@property (strong) NSGradient *borderGradient;
-
 
 #pragma mark - Medallion Image
 ///----------------------

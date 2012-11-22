@@ -34,6 +34,7 @@
 #pragma mark - Medallion Image
 // The gradient used to draw the shine
 @property (strong) NSGradient *shineGradient;
+@property (strong) NSImage *shineGradientImageMask;
 
 @end
 
@@ -79,7 +80,6 @@
 	
 	_borderWidth = 4.f;
 	_borderColor = [NSColor whiteColor];
-	_borderGradient = nil;
 	
 	_shadow = [[NSShadow alloc] init];
 	[_shadow setShadowColor:[NSColor colorWithCalibratedWhite:.25f alpha:.75f]];
@@ -95,7 +95,7 @@
 	static dispatch_once_t restorableStateKeyPathsToken;
 	dispatch_once(&restorableStateKeyPathsToken, ^{
 		NSArray *superRestorableStateKeyPaths = [super restorableStateKeyPaths];
-		NSArray *localRestorableStateKeyPahts = @[ @"imageScaling", @"borderWidth", @"borderColor", @"borderGradient", @"addShine", @"shadow" ];
+		NSArray *localRestorableStateKeyPahts = @[ @"imageScaling", @"borderWidth", @"borderColor", @"addShine", @"shadow" ];
 		restorableStateKeyPaths = [superRestorableStateKeyPaths arrayByAddingObjectsFromArray:localRestorableStateKeyPahts];
 	});
 	return restorableStateKeyPaths;
@@ -105,26 +105,18 @@
 #pragma mark - Drawing
 - (void)drawRect:(NSRect)dirtyRect
 {
-	[[NSGraphicsContext currentContext] saveGraphicsState];
-	
 	NSRect bounds = self.bounds;
 	CGFloat borderWidth = self.borderWidth;
 	NSShadow *shadow = self.shadow;
 	
-	CGFloat shadowSize = MAX(fabs(shadow.shadowOffset.height) * shadow.shadowBlurRadius,
-							 fabs(shadow.shadowOffset.width) * shadow.shadowBlurRadius);
-	NSRect borderRect = NSMakeRect(borderWidth / 2.f + shadowSize,
-								   borderWidth / 2.f + shadowSize,
-								   bounds.size.width - (borderWidth + shadowSize * 2.f),
-								   bounds.size.height - (borderWidth + shadowSize * 2.f));
+	CGFloat shadowSize = MAX(fabs(shadow.shadowOffset.height) * shadow.shadowBlurRadius, fabs(shadow.shadowOffset.width) * shadow.shadowBlurRadius);
+	NSRect borderRect = NSMakeRect(borderWidth / 2.f + shadowSize, borderWidth / 2.f + shadowSize, bounds.size.width - (borderWidth + shadowSize * 2.f), bounds.size.height - (borderWidth + shadowSize * 2.f));
 	
 	NSBezierPath *medallionPath = [NSBezierPath bezierPathWithOvalInRect:borderRect];
 	[medallionPath setLineWidth:borderWidth];
 	
 	[[NSGraphicsContext currentContext] saveGraphicsState];
 	[medallionPath setClip];
-	
-	// Draw image
 	[super drawRect:dirtyRect];
 	
 	// Draw shine
@@ -140,62 +132,38 @@
 		NSPoint shinePathPoints[4] = {
 			shineStartStopPoint,
 			NSMakePoint(bounds.size.width, bounds.size.height),
-			NSMakePoint(0, bounds.size.height),
+			NSMakePoint(0.f, bounds.size.height),
 			shineStartStopPoint
 		};
 		[shinePath appendBezierPathWithPoints:shinePathPoints count:4];
 		[shinePath closePath];
 		[shinePath addClip];
 		
-		[[NSGraphicsContext currentContext] setCompositingOperation:NSCompositeSourceOver];
 		[self.shineGradient drawInRect:bounds angle:90.f];
+		[[NSGraphicsContext currentContext] restoreGraphicsState];
 		
-		// Draw highlight
-		NSPoint highlightStartStopPoint = NSMakePoint(0, bounds.size.height / 2);
-		NSBezierPath *highlightPath = [[NSBezierPath alloc] init];
-		[highlightPath moveToPoint:highlightStartStopPoint];
-		NSPoint highlightPathPoints[4] = {
-			NSMakePoint(NSMidX(bounds), NSMidY(bounds)),
-			NSMakePoint(bounds.size.width, bounds.size.height),
-			NSMakePoint(0, bounds.size.height),
-			highlightStartStopPoint
-		};
-		[highlightPath appendBezierPathWithPoints:highlightPathPoints count:4];
-		[highlightPath closePath];
-		[highlightPath addClip];
-		
+		// Draw a spot highlight at the top
 		NSColor *highlightStartingColor = [NSColor colorWithCalibratedWhite:1.f alpha:.1f];
 		NSColor *highlightEndingColor = [highlightStartingColor colorWithAlphaComponent:0.f];
 		NSGradient *highlightGradient = [[NSGradient alloc] initWithStartingColor:highlightStartingColor endingColor:highlightEndingColor];
+		
 		NSPoint centerPoint = NSMakePoint(0.f, 1.f);
-		NSRect highlightRect = NSMakeRect(bounds.origin.x,
-										  bounds.size.height / 2,
-										  bounds.size.width,
-										  bounds.size.height / 2);
+		NSRect highlightRect = NSMakeRect(bounds.origin.x, self.isFlipped ? bounds.size.height : 0.f, bounds.size.width, bounds.size.height);
 		
 		[[NSGraphicsContext currentContext] setCompositingOperation:NSCompositePlusLighter];
 		[highlightGradient drawInRect:highlightRect relativeCenterPosition:centerPoint];
-		
-		[[NSGraphicsContext currentContext] restoreGraphicsState];
 	}
 	[[NSGraphicsContext currentContext] restoreGraphicsState];
 	
 	// Draw medallion
 	[shadow set];
-	if (self.borderGradient) {
-		[self.borderGradient drawInBezierPath:medallionPath angle:180.f];
-	} else {
-		[self.borderColor set];
-		[medallionPath stroke];
-	}
-	
-	[[NSGraphicsContext currentContext] restoreGraphicsState];
+	[self.borderColor set];
+	[medallionPath stroke];
 }
 
 
 #pragma mark - Medallion Border
 @synthesize borderColor = _borderColor;
-@synthesize borderGradient = _borderGradient;
 @synthesize borderWidth = _borderWidth;
 
 - (void)setBorderColor:(NSColor *)borderColor
@@ -209,19 +177,6 @@
 - (NSColor *)borderColor
 {
 	return _borderColor;
-}
-
-- (void)setBorderGradient:(NSGradient *)borderGradient
-{
-	if (borderGradient != _borderGradient) {
-		_borderGradient = borderGradient;
-		[self setNeedsDisplay:YES];
-	}
-}
-
-- (NSGradient *)borderGradient
-{
-	return _borderGradient;
 }
 
 - (void)setBorderWidth:(CGFloat)borderWidth
