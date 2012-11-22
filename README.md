@@ -3,7 +3,7 @@ A medallion view for OS X, like the login image view introduced in OS X Lion.
 
 Supports retina displays.
 
-<img alt="The medallion view in three different sizes" src="CDMedallionView@2x.png" width="408px" height="336px">
+<img alt="The medallion view in three different sizes" src="http://cloud.github.com/downloads/rastersize/CDMedallionView/CDMedallionView@2x.png" width="408px" height="336px">
 
 ## Getting started 
 - Get the source;
