@@ -19,6 +19,7 @@
 		9C48C8CD165E3B2500E26500 /* CDMedallionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C48C894165E35B900E26500 /* CDMedallionView.framework */; };
 		9C48C8CF165E3C1200E26500 /* mountain-lion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C48C8CE165E3C1200E26500 /* mountain-lion.jpg */; };
 		9C48C8D0165E3D1B00E26500 /* CDMedallionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C48C8A4165E35B900E26500 /* CDMedallionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C48C8E7165E707800E26500 /* CDMedallionView.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9C48C894165E35B900E26500 /* CDMedallionView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,20 @@
 			remoteInfo = CDMedallionView;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9C48C8E6165E706800E26500 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9C48C8E7165E707800E26500 /* CDMedallionView.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9C48C894165E35B900E26500 /* CDMedallionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CDMedallionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +67,21 @@
 		9C48C8C3165E3B1700E26500 /* CDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDAppDelegate.m; sourceTree = "<group>"; };
 		9C48C8C6165E3B1700E26500 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9C48C8CE165E3C1200E26500 /* mountain-lion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mountain-lion.jpg"; sourceTree = "<group>"; };
+		9C48C8D3165E6F7800E26500 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		9C48C8D5165E6F7800E26500 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		9C48C8D6165E6F7800E26500 /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		9C48C8D7165E6F7800E26500 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		9C48C8D9165E6F7800E26500 /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		9C48C8DA165E6F7800E26500 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		9C48C8DC165E6F7800E26500 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		9C48C8DD165E6F7800E26500 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		9C48C8DE165E6F7800E26500 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		9C48C8E0165E6F7800E26500 /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		9C48C8E1165E6F7800E26500 /* Mac-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		9C48C8E2165E6F7800E26500 /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		9C48C8E3165E6F7800E26500 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		9C48C8E4165E6F7800E26500 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		9C48C8E5165E6F7800E26500 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +110,7 @@
 			children = (
 				9C48C89D165E35B900E26500 /* CDMedallionView */,
 				9C48C8B6165E3B1700E26500 /* Medallion Test App */,
+				9C48C8D1165E6F7800E26500 /* xcconfigs */,
 				9C48C896165E35B900E26500 /* Frameworks */,
 				9C48C895165E35B900E26500 /* Products */,
 			);
@@ -157,6 +188,68 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9C48C8D1165E6F7800E26500 /* xcconfigs */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C8D2165E6F7800E26500 /* Base */,
+				9C48C8DB165E6F7800E26500 /* iOS */,
+				9C48C8DF165E6F7800E26500 /* Mac OS X */,
+				9C48C8E5165E6F7800E26500 /* README.md */,
+			);
+			path = xcconfigs;
+			sourceTree = "<group>";
+		};
+		9C48C8D2165E6F7800E26500 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C8D3165E6F7800E26500 /* Common.xcconfig */,
+				9C48C8D4165E6F7800E26500 /* Configurations */,
+				9C48C8D8165E6F7800E26500 /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9C48C8D4165E6F7800E26500 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C8D5165E6F7800E26500 /* Debug.xcconfig */,
+				9C48C8D6165E6F7800E26500 /* Profile.xcconfig */,
+				9C48C8D7165E6F7800E26500 /* Release.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		9C48C8D8165E6F7800E26500 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C8D9165E6F7800E26500 /* Application.xcconfig */,
+				9C48C8DA165E6F7800E26500 /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		9C48C8DB165E6F7800E26500 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C8DC165E6F7800E26500 /* iOS-Application.xcconfig */,
+				9C48C8DD165E6F7800E26500 /* iOS-Base.xcconfig */,
+				9C48C8DE165E6F7800E26500 /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9C48C8DF165E6F7800E26500 /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				9C48C8E0165E6F7800E26500 /* Mac-Application.xcconfig */,
+				9C48C8E1165E6F7800E26500 /* Mac-Base.xcconfig */,
+				9C48C8E2165E6F7800E26500 /* Mac-DynamicLibrary.xcconfig */,
+				9C48C8E3165E6F7800E26500 /* Mac-Framework.xcconfig */,
+				9C48C8E4165E6F7800E26500 /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -196,6 +289,7 @@
 				9C48C8B0165E3B1700E26500 /* Sources */,
 				9C48C8B1165E3B1700E26500 /* Frameworks */,
 				9C48C8B2165E3B1700E26500 /* Resources */,
+				9C48C8E6165E706800E26500 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,6 +478,7 @@
 		};
 		9C48C8AA165E35B900E26500 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C48C8E3165E6F7800E26500 /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -392,6 +487,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDMedallionView/CDMedallionView-Prefix.pch";
 				INFOPLIST_FILE = "CDMedallionView/CDMedallionView-Info.plist";
+				INSTALL_PATH = "@rpath";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -399,6 +495,7 @@
 		};
 		9C48C8AB165E35B900E26500 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C48C8E3165E6F7800E26500 /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -407,6 +504,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDMedallionView/CDMedallionView-Prefix.pch";
 				INFOPLIST_FILE = "CDMedallionView/CDMedallionView-Info.plist";
+				INSTALL_PATH = "@rpath";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
