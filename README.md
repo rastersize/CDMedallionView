@@ -7,7 +7,9 @@ Supports retina displays.
 
 ## Getting started 
 - Get the source;
-	- as a git submodule: `git submodule add https://github.com/rastersize/CDMedallionView.git Vendor/CDMedallionView && git submodule update --init --recursive`
+	- as a git submodule:
+		1. `git submodule add https://github.com/rastersize/CDMedallionView.git Vendor/CDMedallionView`
+		2. `git submodule update --init --recursive`
 	- or by [download the source as a zip](https://github.com/rastersize/CDMedallionView/archive/master.zip) and extracting it in your vendor directory.
 - Add the the source files (`CDMedallionView.{h,m}`) to your Xcode project.
 	- Make sure they are compiled using ARC.
